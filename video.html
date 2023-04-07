@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fonts in real time</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" 
+      type="image/svg" 
+      href="favicon.svg">
+   </head>
+  <body>
+  <main>
+<section class="slide">
+  <img src="img/caper-hello.png" class="caper-ss"> 
+  <footer>
+    <div class="runner-1">Introduction</div>
+    <div class="runner-2"></div>
+  </footer>
+</section>
+
+<section class="slide divider">
+  <div class="text">
+    <h1>Fonts in real time</h1>
+    <h3><em>Variable fonts as expressive interfaces</em></h3>
+  </div>
+
+  <footer>
+    <div class="runner-1">Marie Otsuka</div>
+    <div class="runner-2">April 7, 2023 @ Charlottesville Design Week</div>
+  </footer>
+</section>
+
+<section class="slide divider">
+  <div class="text">
+    <h1>What are fonts?</h1>
+    <h3><em>Part 1: Vectors and point structures</em></h3>
+  </div>
+  <footer>
+    <div class="runner-1">&nbsp;</div>
+    <div class="runner-2">&nbsp;</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <img src="img/caper-hello.png" class="caper-ss"> 
+  <footer>
+    <div class="runner-1">A digital letter</div>
+    <div class="runner-2">Part 1: Vectors and point structures</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <img src="img/caper_ss2.png" class="caper-ss">
+  <footer>
+    <div class="runner-1">A digital letter</div>
+    <div class="runner-2">Part 1: Vectors and point structures</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <img src="img/caper_ss3.png" class="caper-ss">
+  <footer>
+    <div class="runner-1">A digital letter</div>
+    <div class="runner-2">Part 1: Vectors and point structures</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <figure>
+    <div class="cols">
+      <div class="col2 middle">
+        <div class="vector">
+          <div class="label">A</div>
+          <div class="endpoint"></div>
+          <div class="line"><div class="linemove animate"></div></div>
+          <div class="endpoint"></div>
+          <div class="label">B</div>
+        </div>
+      </div>
+      <div class="col2">
+        <div>
+        <img class="whitebg wideimg" src="img/Bezier_All_anim.gif">
+        <figcaption>Animated Bezier Vectors, Wikimedia Commons</figcaption>
+        </div>
+      </div>
+    </div>
+  </figure>
+  <footer>
+    <div class="runner-1">A digital letter</div>
+    <div class="runner-2">Part 1: Vectors and point structures</div>
+  </footer>
+</section>
+
+<!-- <section class="slide">
+  <figure>
+    <div class="cols whitebg">
+      <div class="col2">      
+        <img src="img/fig3-1.gif">  
+        <img src="img/fig3-2-2.gif"> 
+      </div>
+      <div class="col2">
+        <img src="img/IF5.gif" style="height: 500px; width: auto;">
+      </div>
+    </div>
+    <figcaption>Rasterization Illustrations in the <a href="https://developer.apple.com/fonts/TrueType-Reference-Manual/RM03/Chap3.html">Apple Developer Manual</a>
+    </figcaption>
+  </figure>
+  
+  <footer>
+    <div class="runner-1">The digital letter</div>
+    <div class="runner-2"></div>
+  </footer>
+</section> -->
+
+<section class="slide">
+
+  <h2>Digital letterforms are made of mathematical<br> equations, as functions of time</h2>
+
+  <footer>
+    <div class="runner-1">A digital letter</div>
+    <div class="runner-2">Part 1: Vectors and point structures</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <figure class="full">
+    <img src="img/magmatic-interpolation.png" class="wide-img">
+    <figcaption>Master Compatibility view of outlines</figcaption>
+  </figure>
+  <footer>
+    <div class="runner-1">A variable font</div>
+    <div class="runner-2">Part 1: Vectors and point structures</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <figure class="interpolation">
+    <div class="cols">
+      <div class="magmatic interp" style="--wdth: 50; --wght: 100">H</div>
+      <div class="arrow"><span class="leftarrow"> </span></div>
+      <div class="magmatic interp" style="--wdth: 100; --wght: 400"></div>
+      <div class="arrow"><span class="rightarrow"> </span></div>
+      <div class="magmatic interp" style="--wdth: 150; --wght: 900">H</div>
+    </div>
+  </figure>
+  <footer>
+    <div class="runner-1">A Variable Font</div>
+    <div class="runner-2">Part 1: Vectors and point structures</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <figure class="interpolation">
+    <div class="cols">
+      <div class="magmatic interp" style="--wdth: 50; --wght: 100">H</div>
+      <div class="arrow"><span class="leftarrow animate arrowanimate">→</span></div>
+      <div class="magmatic interp" style="--wdth: 100; --wght: 400">H</div>
+      <div class="arrow"><span class="rightarrow animate arrowanimate">←</span></div>
+      <div class="magmatic interp" style="--wdth: 150; --wght: 900">H</div>
+    </div>
+  </figure>
+  <footer>
+    <div class="runner-1">A Variable Font</div>
+    <div class="runner-2">Part 1: Vectors and point structures</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <h1 class="magmatic maganimate animate" style="font-size: 300px;">H</h1>
+  <footer>
+    <div class="runner-1">A variable weight axis</div>
+    <div class="runner-2">Part 1: Vectors and point structures</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <h1 class="magmatic mag-wdth-animate animate" style="font-size: 300px;">H</h1>
+  <footer>
+    <div class="runner-1">A variable width axis</div>
+    <div class="runner-2">Part 1: Vectors and point structures</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <figure>
+  <video src="img/magmatic-samsa.mp4" muted autoplay loop controls></video>
+  <figcaption>Laurence Penny’s Samsa, Variable Font Inspector</figcaption>
+  </figure>
+s
+  <footer>
+    <div class="runner-1">A Variable Font</div>
+    <div class="runner-2">Part 1: Vectors and point structures</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <figure>
+    <table>
+    <thead>
+    <tr>
+    <th>Axis Tag</th>
+    <th>Description</th>
+    <th>Valid Range</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>wght</td>
+    <td>weight</td>
+    <td>1—1000</td>
+    </tr>
+    <tr>
+    <td>wdth</td>
+    <td>width</td>
+    <td>>0, percent of normal width</td>
+    </tr>
+    <tr>
+    <td>opsz</td>
+    <td>optical sizing</td>
+    <td>>0, point sizes</td>
+    </tr>
+    <tr>
+    <td>ital</td>
+    <td>italicization</td>
+    <td>0—1</td>
+    </tr>
+    <tr>
+    <td>slnt</td>
+    <td>slant</td>
+    <td>-90—90</td>
+    </tr>
+    </tbody>
+    </table>
+    <figcaption>Standard Axes for Open Type 1.8</figcaption>
+  </figure>
+
+  <footer>
+    <div class="runner-1">Standard Axes</div>
+    <div class="runner-2">Part 1: Vectors and point structures</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <figure>
+    <video src="img/chee-variable.mp4" muted autoplay loop controls></video>
+    <figcaption>Chee Variable by Ohno Type, James Edmonson</figcaption>
+  </figure>
+
+  <footer>
+    <div class="runner-1">Custom Axes</div>
+    <div class="runner-2">Part 1: Vectors and point structures</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <figure>
+    <table>
+    <thead>
+    <tr>
+    <th>Axis Tag</th>
+    <th>Description</th>
+    <th>Valid Range</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>wght</td>
+    <td>weight</td>
+    <td>1—1000</td>
+    </tr>
+    <tr>
+    <td>wdth</td>
+    <td>width</td>
+    <td>>0, percent of normal width</td>
+    </tr>
+    <tr>
+    <td>opsz</td>
+    <td>optical sizing</td>
+    <td>>0, point sizes</td>
+    </tr>
+    <tr>
+    <td><em>ital</em></td>
+    <td><em>italicization</em></td>
+    <td><em>0—1</em></td>
+    </tr>
+    <tr>
+    <td><em>slnt</em></td>
+    <td><em>slant</em></td>
+    <td><em>-90—90</em></td>
+    </tr>
+    </tbody>
+    </table>
+    <figcaption>Standard Axes for Open Type 1.8</figcaption>
+  </figure>
+
+  <footer>
+    <div class="runner-1">Standard Axes</div>
+    <div class="runner-2">Part 1: Vectors and point structures</div>
+  </footer>
+</section>
+
+
+<section class="slide">
+  <figure>
+    <img src="img/univers-typeface.jpeg">
+    <figcaption>Adrian Frutiger’s Univers Type Family, 1957</figcaption>
+  </figure>
+  <footer>
+    <div class="runner-1">A variable font</div>
+    <div class="runner-2">Part 1: Vectors and point structures</div>
+  </footer>
+</section>
+
+
+<section class="slide">
+  <figure>
+    <div class="cols">
+      <div class="col2">      
+        <div class="quiosco fontdisplay">fantastic</div>
+        <figcaption>Quisco</figcaption>
+      </div>
+      <div class="col2">
+        <div class="quiosco fontdisplay"><em style="font-style: italic;">fantastic</em></div>
+        <figcaption>Quisco italic</figcaption>
+      </div>
+    </div>
+    <div class="arrow"></div>
+
+  </figure>
+
+  <footer>
+    <div class="runner-1">Italics</div>
+    <div class="runner-2">Part 1: Vectors and point structures</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <figure>
+    <div class="cols">
+      <div class="col2">      
+        <img src="img/roman1.png">  
+      </div>
+      <div class="col2">
+        <img src="img/italic1.png">
+      </div>
+    </div>
+  </figure>
+
+  <footer>
+    <div class="runner-1">Italics</div>
+    <div class="runner-2">Part 1: Vectors and point structures</div>
+  </footer>
+</section>
+
+
+<section class="slide">
+  <figure>
+    <div class="cols">
+      <div class="col2">      
+        <img src="img/roman2.png">  
+      </div>
+      <div class="col2">
+        <img src="img/italic2.png">
+      </div>
+    </div>
+  </figure>
+
+  <footer>
+    <div class="runner-1">Italics</div>
+    <div class="runner-2">Part 1: Vectors and point structures</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <figure>
+    <div class="cols">
+      <div class="col2">      
+        <div class="magmatic maganimate animate" style="font-size: 300px;--wght: 100"></div>
+      </div>
+      <div class="col2">
+        
+      </div>
+    </div>
+  </figure>
+
+  <footer>
+    <div class="runner-1">Complex Characters</div>
+    <div class="runner-2">Part 1: Vectors and point structures</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <figure>
+    <div class="cols">
+      <div class="col2">      
+        <div class="magmatic maganimate animate" style="font-size: 300px;--wght: 100"></div>
+      </div>
+      <div class="col2">
+        <div class="magmatic maganimate animate" style="font-size: 300px;--wght: 900">$</div>
+      </div>
+    </div>
+  </figure>
+
+  <footer>
+    <div class="runner-1">Complex Characters</div>
+    <div class="runner-2">Part 1: Vectors and point structures</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <figure>
+    <video src="img/vfbounds.mp4" autoplay muted loop></video>
+    <figcaption>Variable Font Substitution Tool, <a href="https://vfbounds.occupantfonts.com/">vfbounds.occupantfonts.com</a> with Nic Schumann, 2020</figcaption>
+  </figure>
+
+  <footer>
+    <div class="runner-1">Substitution Tool</div>
+    <div class="runner-2">Part 1: Vectors and point structures</div>
+  </footer>
+</section>
+
+<section class="slide divider">
+  <div class="text">
+    <h1>Pentameter</h1>
+    <h3><em>Part 2: An approach to a variable font</em></h3>
+  </div>
+  <footer>
+    <div class="runner-1">&nbsp;</div>
+    <div class="runner-2">&nbsp;</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <figure>
+    <div class="pentameter fontdisplay slantanimate animate">Italic</div>
+    <figcaption>An Upright Italic</figcaption>
+  </figure>
+
+  <footer>
+    <div class="runner-1">An Upright Italic</div>
+    <div class="runner-2">Part 2: An approach to a variable font</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <figure>
+    <div class="pentameter fontdisplay slantanimate animate">handwritten monospace</div>
+    <figcaption>A monospace for poetic computation</figcaption>
+  </figure>
+
+  <footer>
+    <div class="runner-1">An Upright Italic</div>
+    <div class="runner-2">Part 2: An approach to a variable font</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <figure>
+    <img src="img/cursive-blue.png">
+    <figcaption>Cursive Workbook <a href="https://en.wikipedia.org/wiki/Cursive#/media/File:Cursive.png">Wikimedia Commons</a></figcaption>
+  </figure>
+
+  <footer>
+    <div class="runner-1">Design origins</div>
+    <div class="runner-2">Part 2: An approach to a variable font</div>
+  </footer>
+</section>
+
+<section class="slide dark">
+  <figure>
+  <img src="img/pim_poster.png">
+  <figcaption>Poster for Poetry in Motion</figcaption>
+  </figure>
+
+  <footer>
+    <div class="runner-1">Design origins</div>
+    <div class="runner-2">Part 2: An approach to a variable font</div>
+  </footer>
+</section>
+
+<section class="slide dark">
+  <figure>
+  <img src="img/pim_cutouts.png" style="background: white;">
+  <figcaption>Rough, X-acto knife cutouts of letterforms</figcaption>
+  </figure>
+
+  <footer>
+    <div class="runner-1">Design origins</div>
+    <div class="runner-2">Part 2: An approach to a variable font</div>
+  </footer>
+</section>
+
+
+
+<section class="slide">
+  <figure>
+    <div class="quiosco fontdisplay">monospacing</div>
+    <figcaption>Quisco</figcaption>
+    <div class="courier fontdisplay">monospacing</div>
+    <figcaption>Courier</figcaption>
+    <div class="pentameter fontdisplay" style="--wght: 450;
+    --wdth: 90;">monospacing</div>
+    <figcaption>Pentameter</figcaption>
+  </figure>
+
+  <footer>
+    <div class="runner-1">Designing a Monospace</div>
+    <div class="runner-2">Part 2: An approach to a variable font</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <h1 class="pentameter vfanimate animate">Pentameter Variable</h1>
+
+  <footer>
+    <div class="runner-1">Pentameter</div>
+    <div class="runner-2">Part 2: An approach to a variable font</div>
+  </footer>
+
+</section>
+
+<section class="slide">
+  <figure>
+    <div class="cols">
+      <div class="col2">      
+        <img src="img/html.png">
+        <figcaption class="screen">HTML in Pentameter Condensed</figcaption>
+      </div>
+      <div class="col2">
+        <img src="img/css.png">
+        <figcaption class="screen">CSS in Pentameter</figcaption>
+      </div>
+    </div>
+  </figure>
+  <footer>
+    <div class="runner-1">Widths of Code</div>
+    <div class="runner-2">Part 2: An approach to a variable font</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <div class="text definition">
+    <dt>Pitch <code>(noun)</code></dt>
+    <dd>a: a unit of width of type based on the number of times a letter can be set in a linear inch</dd>
+    <dd>b: the property of a sound and especially a musical tone that is determined by the frequency of the waves producing it : highness or lowness of sound</dd>
+    <figcaption>Definitions from Merriam-Webster</figcaption>
+  </div>
+  <footer>
+    <div class="runner-1">Definitions of Pitch</div>
+    <div class="runner-2">Part 2: An approach to a variable font</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <figure>
+    <video src="img/pitch-recording.mp4" autoplay muted loop></video>
+    <figcaption>Adjusting the widths updates the “pitch” on <a href="https://occupantfonts.com">occupantfonts.com</a></figcaption>
+  </figure>
+  <footer>
+    <div class="runner-1">occupantfonts.com</div>
+    <div class="runner-2">Part 2: An approach to a variable font</div>
+  </footer>
+</section>
+
+<!-- <section class="slide">
+  <figure>
+    <div class="cols">
+      <div class="col2">      
+        <img src="img/Pentameter_Specimen-1.png">
+      </div>
+      <div class="col2">
+        <img src="img/Pentameter_Specimen-2.png">
+      </div>
+    </div>
+  </figure>
+  <footer>
+    <div class="runner-1">Environmental Interfaces</div>
+    <div class="runner-2">Pentameter</div>
+  </footer>
+</section>
+ -->
+
+<section class="slide divider">
+  <div class="text">
+    <h1>Seasons in Pentameter</h1>
+    <h3><em>Part 3: A live specimen</em></h3>
+  </div>
+<footer>
+  <div class="runner-1">&nbsp;</div>
+  <div class="runner-2">&nbsp;</div>
+</footer>
+</section>
+
+<section class="slide">
+  <figure>
+    <img src="img/pim_poster-inbus.png">
+    <figcaption>The original poster in a Rhode Island bus</figcaption>
+  </figure>
+
+  <footer>
+    <div class="runner-1">Poety in Motion</div>
+    <div class="runner-2">Part 3: A live specimen</div>
+  </footer>
+</section>
+
+<section class="slide dark">
+  <figure>
+    <img src="img/seasons-static.png">
+    <figcaption><a href="https://pentad.world/">Seasons in Pentameter</a> with <a href="https://laurelschwulst.com">Laurel Shwulst</a> and <a href="https://www.tiger.exposed/index">Tiger Dingsun</a>, May 2022</figcaption>
+  </figure>
+
+  <footer>
+    <div class="runner-1">pentad.world</div>
+    <div class="runner-2">Part 3: A live specimen</div>
+  </footer>
+</section>
+
+
+<section class="slide dark">
+  <figure>
+    <img src="img/seasons-all.png">
+    <figcaption>All 72 microseasons in Pentameter</figcaption>
+  </figure>
+
+  <footer>
+    <div class="runner-1">pentad.world</div>
+    <div class="runner-2">Part 3: A live specimen</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <figure>
+    <img src="img/pentad-favicon.png">
+    <figcaption>Asterisk as favicon for the websit</figcaption>
+  </figure>
+  <footer>
+    <div class="runner-1">pentad.world</div>
+    <div class="runner-2">Part 3: A live specimen</div>
+  </footer>
+</section>
+
+<section class="slide dark">
+  <figure>
+    <div id="stars">      
+    </div>
+    <figcaption>Dynamic favicons for each season</figcaption>
+  </figure>
+  <footer>
+    <div class="runner-1">pentad.world</div>
+    <div class="runner-2">Part 3: A live specimen</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <figure>
+    <div class="cols">
+      <div class="col2">      
+        <img src="img/slack.png">
+      </div>
+      <div class="col2">
+        <div id="social">      
+        </div>
+      </div>
+    </div>
+    <figcaption>Real-time social share images for each season</figcaption>
+  </figure>
+  <footer>
+    <div class="runner-1">pentad.world</div>
+    <div class="runner-2">Part 3: A live specimen</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <h2>Variation as a function of time</h2>
+  <footer>
+    <div class="runner-1">Variation as a medium</div>
+    <div class="runner-2">Part 3: A live specimen</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <h2>Variation as a function of [any input]</h2>
+  <footer>
+    <div class="runner-1">Variation as a medium</div>
+    <div class="runner-2">Part 3: A live specimen</div>
+  </footer>
+</section>
+
+<section class="slide dark">
+  <figure>
+    <video src="img/beowolf-11296.mp4" autoplay loop muted></video>
+    <figcaption>FF Beowulf by LettError (Just van Rossum and Erik van Blokland,) 1990</figcaption>
+  </figure>
+  <footer>
+    <div class="runner-1">Code as a creative material</div>
+    <div class="runner-2">Part 3: A live specimen</div>
+  </footer>
+</section>
+
+<section class="slide dark">
+  <figure>
+    <img src="img/twincities.jpg">
+    <figcaption>Announcement for a panel on the Typeface Twin, deesigned by LettError, 2002</figcaption>
+  </figure>
+  <footer>
+    <div class="runner-1">Code as a creative material</div>
+    <div class="runner-2">Part 3: A live specimen</div>
+  </footer>
+</section>
+
+<section class="slide dark">
+  <figure>
+    <video src="img/ra.mp4" class="embed" autoplay muted loop></video>
+    <figcaption>For <a href="https://jolthoms.com/">Jol Thoms</a>, with <a href="http://minkyoungkim.com/home/">Minkyoung Kim</a></figcaption>
+  </figure>
+  <footer>
+    <div class="runner-1">Code as a creative material</div>
+    <div class="runner-2">Part 3: A live specimen</div>
+  </footer>
+</section>
+
+
+<section class="slide dark">
+  <figure>
+    <video src="img/moonvf.mp4" class="embed" autoplay muted loop></video>
+    <figcaption>Moon VF</figcaption>
+  </figure>
+  <footer>
+    <div class="runner-1">Code as a creative material</div>
+    <div class="runner-2">Part 3: A live specimen</div>
+  </footer>
+</section>
+
+<section class="slide dark">
+  <figure>
+    <video src="img/ocean-listening_compressed.mp4" class="embed" autoplay muted loop></video>
+    <figcaption>An ocean listening, Radio Amnion / Jol Thoms</figcaption>
+  </figure>
+  <footer>
+    <div class="runner-1">Code as a creative material</div>
+    <div class="runner-2">Part 3: A live specimen</div>
+  </footer>
+</section>
+
+<!-- <section class="slide">
+  <video src="img/trekker_sr.mp4" class="embed" autoplay muted loop>
+  </video>
+  <footer>
+    <div class="runner-1">trekker.occupantfonts.com</div>
+    <div class="runner-2">Part 3: A live specimen</div>
+  </footer>
+</section> -->
+<section class="slide">
+  <figure>
+    <img src="img/class.png">
+    <figcaption>Web Type Class, reviewing proofs of experimental letterforms</figcaption>
+  </figure>
+  <footer>
+    <div class="runner-1">Web Type Class</div>
+    <div class="runner-2">Part 3: A live specimen</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <video src="img/webtype.mp4" class="embed" autoplay muted loop>
+  </video>
+  <footer>
+    <div class="runner-1">vf.webtype.xyz</div>
+    <div class="runner-2">Part 3: A live specimen</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <h2>Axis of Variation as a Live Interface</h2>
+  <footer>
+    <div class="runner-1">Typeface as Interface</div>
+    <div class="runner-2">Part 3: A live specimen</div>
+  </footer>
+</section>
+
+<section class="slide">
+  <blockquote>
+  Technology is the active human interface<br> with the material world
+  <figcaption>Ursula le Guin, <a href="http://ursulakleguinarchive.com/Note-Technology.html">A Rant about “Technology”</a></figcaption>
+  </blockquote>
+  <footer>
+    <div class="runner-1">Typeface as Interface</div>
+    <div class="runner-2">Part 3: A live specimen</div>
+  </footer>
+</section>
+
+<section class="slide divider">
+  <div class="text">
+    <h1>Thank you!</h1>
+    <p>
+    Reach out: marie@occupantfonts.com<br>
+    More on variable fonts at: <a href=" https://variable.occupantfonts.com">variable.occupantfonts.com</a>
+    </p>
+  </div>
+  <footer>
+    <div class="runner-1">Marie Otsuka</div>
+    <div class="runner-2">April 7, 2023 @ Charlottesville Design Week</div>
+  </footer>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
